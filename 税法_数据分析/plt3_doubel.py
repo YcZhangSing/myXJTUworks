@@ -29,6 +29,8 @@ labels = [f'{i}-{i+10}' for i in bins[:-1]]
 # 计算每个区间的样本个数
 counts, _ = np.histogram(data, bins)
 
+print('counts:', counts)
+
 # 计算各区间占比
 total_count = len(data)
 proportions = counts / total_count * 100
